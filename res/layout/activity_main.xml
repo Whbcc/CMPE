@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/displayButton"
+        android:layout_marginBottom="70dp"
+        android:text="Finish" />
+
+    <Button
+        android:id="@+id/displayButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/finishButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:text="Display" />
+
+    <EditText
+        android:id="@+id/nameHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:hint="Enter Name Here" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/displayButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="54dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
